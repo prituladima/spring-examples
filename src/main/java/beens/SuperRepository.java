@@ -6,15 +6,13 @@ import org.springframework.stereotype.Repository;
 import java.util.Date;
 
 @Repository
-public class MyRepository implements IRepository{
+public class SuperRepository implements IRepository {
 
     public String getAppName() {
-        return "Hello Spring App";
+        return "Super caw";
     }
 
     public Date getSystemDateTime() {
         return new Date();
     }
-
-
 }
