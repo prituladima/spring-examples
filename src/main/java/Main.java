@@ -1,3 +1,4 @@
+import arch.Language;
 import beens.GreetingService;
 import beens.MyComponent;
 import configuration.AppConfiguration;
@@ -11,13 +12,13 @@ public class Main{
         // the configuration of the 'AppConfiguration' class.
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfiguration.class);
 //
-//        System.out.println("----------");
-//        Language language = (Language) context.getBean("language-Vietnamese");
-//
-//        System.out.println("Bean Language: "+ language);
-//        System.out.println("Call language.sayBye(): "+ language.getBye());
-//
-//        System.out.println("----------");
+        System.out.println("----------");
+        Language language = (Language) context.getBean("getVietnameseLanguage");
+
+        System.out.println("Bean Language: "+ language);
+        System.out.println("Call language.sayBye(): "+ language.getBye());
+
+        System.out.println("----------");
 //
 //        System.out.println("----------");
 //        Language language1 = (Language) context.getBean("language-English");
