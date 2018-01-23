@@ -17,11 +17,13 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 public class AppConfiguration {
 
     @Bean
+    @Qualifier("vietnamese")
     public Language getVietnameseLanguage() {
         return new Vietnamese();
     }
 
     @Bean
+    @Qualifier("english")
     public Language getEnglishLanguage() {
         return new English();
     }
