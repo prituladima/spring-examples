@@ -1,13 +1,15 @@
 package beens;
 
 import arch.IRepository;
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
-public class MyComponent {
+public class MyComponent implements InitializingBean, DisposableBean{
 
     @Value("${propertyOne}")
     private String propertyOne;
@@ -25,4 +27,11 @@ public class MyComponent {
         System.out.println(propertyTwo);
     }
 
+    public void destroy() throws Exception {
+        System.out.println("destroy");
+    }
+
+    public void afterPropertiesSet() throws Exception {
+        System.out.println("afterPropertiesSet" + this.toString());
+    }
 }
