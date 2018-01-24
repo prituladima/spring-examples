@@ -9,7 +9,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class Main{
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException{
         // Creating a Context Application object by reading
         // the configuration of the 'AppConfiguration' class.
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfiguration.class);
@@ -46,7 +46,13 @@ public class Main{
 
         ApplicationContext context1 = new AnnotationConfigApplicationContext(LazyConfiguration.class);
 
-        RarelyUsedBean rarelyUsedBean = context1.getBean(RarelyUsedBean.class);
+        int counter = 0;
+        while (++counter < 5){
+            Thread.sleep(500);
+            RarelyUsedBean rarelyUsedBean = context1.getBean(RarelyUsedBean.class);
+            System.out.println(System.identityHashCode(rarelyUsedBean));
+        }
+
 
 
     }
