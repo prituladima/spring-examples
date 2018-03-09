@@ -11,7 +11,8 @@ public class AppConfiguration {
 
 
     @Bean
-    @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+//    @Lazy
+//    @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
     public ObjectA getObjectA(ObjectB objectB){
         return new ObjectA(objectB);
     }

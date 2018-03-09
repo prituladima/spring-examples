@@ -12,16 +12,16 @@ public class Main {
         System.out.println("Spring container started and is ready");
 
 
-        System.out.println(ConfigurableBeanFactory.SCOPE_PROTOTYPE + " check objectA !=");
-        ObjectA objectA = context.getBean(ObjectA.class);
-        ObjectA objectA1 = context.getBean(ObjectA.class);
-        System.out.println(objectA != objectA1);
-
-
-        System.out.println(ConfigurableBeanFactory.SCOPE_SINGLETON + " check objectB ==");
-        ObjectB objectB = context.getBean(ObjectB.class);
-        ObjectB objectB1 = context.getBean(ObjectB.class);
-        System.out.println(objectB == objectB1);
+//        System.out.println(ConfigurableBeanFactory.SCOPE_PROTOTYPE + " check objectA !=");
+//        ObjectA objectA = context.getBean(ObjectA.class);
+//        ObjectA objectA1 = context.getBean(ObjectA.class);
+//        System.out.println(objectA != objectA1);
+//
+//
+//        System.out.println(ConfigurableBeanFactory.SCOPE_SINGLETON + " check objectB ==");
+//        ObjectB objectB = context.getBean(ObjectB.class);
+//        ObjectB objectB1 = context.getBean(ObjectB.class);
+//        System.out.println(objectB == objectB1);
 
 
 
