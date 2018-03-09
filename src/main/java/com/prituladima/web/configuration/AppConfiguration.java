@@ -1,15 +1,14 @@
-package configuration;
+package com.prituladima.web.configuration;
 
-import arch.Language;
-import impl.English;
-import impl.Vietnamese;
+import com.prituladima.web.arch.Language;
+import com.prituladima.web.impl.English;
+import com.prituladima.web.impl.Vietnamese;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.*;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 @Configuration
-@ComponentScan({"beens"})
+@ComponentScan({"com.prituladima.web.beens"})
 @PropertySource("application.properties")
 public class AppConfiguration {
 

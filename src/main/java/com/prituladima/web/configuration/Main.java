@@ -1,9 +1,11 @@
-import arch.Language;
-import beens.GreetingService;
-import beens.MyComponent;
-import beens.RarelyUsedBean;
-import configuration.AppConfiguration;
-import configuration.LazyConfiguration;
+package com.prituladima.web.configuration;
+
+import com.prituladima.web.arch.Language;
+import com.prituladima.web.beens.GreetingService;
+import com.prituladima.web.beens.MyComponent;
+import com.prituladima.web.beens.RarelyUsedBean;
+import com.prituladima.web.configuration.AppConfiguration;
+import com.prituladima.web.configuration.LazyConfiguration;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

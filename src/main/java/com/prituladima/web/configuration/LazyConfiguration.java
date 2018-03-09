@@ -1,11 +1,11 @@
-package configuration;
+package com.prituladima.web.configuration;
 
-import beens.RarelyUsedBean;
+import com.prituladima.web.beens.RarelyUsedBean;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.*;
 
 @Configuration
-@ComponentScan({"beens"})
+@ComponentScan({"com.prituladima.web.beens"})
 @Import(AppConfiguration.class)
 public class LazyConfiguration {
 

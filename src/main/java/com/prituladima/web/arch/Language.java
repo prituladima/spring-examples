@@ -1,4 +1,4 @@
-package arch;
+package com.prituladima.web.arch;
 
 public interface Language {
 

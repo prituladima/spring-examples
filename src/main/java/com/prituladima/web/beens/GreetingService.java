@@ -1,6 +1,6 @@
-package beens;
+package com.prituladima.web.beens;
 
-import arch.Language;
+import com.prituladima.web.arch.Language;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;

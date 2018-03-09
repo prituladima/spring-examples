@@ -1,4 +1,4 @@
-package beens;
+package com.prituladima.web.beens;
 
 import org.springframework.beans.factory.InitializingBean;
 

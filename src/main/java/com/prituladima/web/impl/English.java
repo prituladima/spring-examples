@@ -1,6 +1,6 @@
-package impl;
+package com.prituladima.web.impl;
 
-import arch.Language;
+import com.prituladima.web.arch.Language;
 
 /**
  * Created by prituladima on 1/22/18.

@@ -1,22 +1,20 @@
-package beens;
+package com.prituladima.web.beens;
 
-import arch.IRepository;
+import com.prituladima.web.arch.IRepository;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 import java.util.Date;
 
 @Repository
-@Qualifier("my")
-public class MyRepository implements IRepository{
+@Qualifier("super")
+public class SuperRepository implements IRepository {
 
     public String getAppName() {
-        return "Hello Spring App";
+        return "Super caw";
     }
 
     public Date getSystemDateTime() {
         return new Date();
     }
-
-
 }
